@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:'Times New Roman', Times, serif;
+}
+
+.d-flex {
+  display: flex
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: wheat;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 1px;
+  transition: all 0.3s ease-in-out;
+}
+#hours, #minutes, #seconds ,#am-pm {
+  cursor: pointer;
+  color: #0E141B;
+  border-color: black;
+  background-color: rgb(219, 190, 135);
+  padding: 0.5rem;
+  appearance: none;
+  outline: black;
+  font-weight: bold;
+  margin-right: 0.6rem;
+ 
+}
+
+
+
+.container {
+  background: url("https://images.pexels.com/photos/1095601/pexels-photo-1095601.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")no-repeat;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.clock-container {
+  padding: 2rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000000;
+  box-shadow: 0 0 10px white;
+}
+
+.current {
+  font-size: 2rem;
+  color: #f19733;
+}
+
+.form {
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.submit-button {
+  border-color: rgb(249, 248, 248);
+  border: 10px;
+  /* border-radius: 2rem; */
+  font-weight: bold;
+}
+
+.set-al {
+  overflow: scroll;
+  /* width: 100%; */
+}
+.main-img{
+  height: 60px;
+  width: 80px;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  transition-delay: initial;
+}
+
+.set-al .alarm-container-title {
+  margin-top: 2rem;
+  color: #f19733;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.alarm {
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  align-items: center;
+
+}
+.alarm .alarm-delete {
+
+  color: #fff;
+  font-size:xx-medium;
+  border-radius: 2rem;
+  background-color: #f19733;
+  font-weight: bold;
+}
+
+.time {
+  color: #e7eaee;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.btn1:hover {
+  background-color: white;
+}
+
+.pro-title{
+  background-color: #0E141B;
+  align-items: center;
+  text-align: center;
+  color: wheat;
+  
+}
+@media only screen and (min-width: 600px) {
+  /* add paddig */
+  .container {
+    padding-block: 2rem;
+  }
+  .clock-container{
+      width: 450px;
+  }
+}

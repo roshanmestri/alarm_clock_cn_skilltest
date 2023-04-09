@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="" content="Alarm Clock for CN Skill Test" />
+    
+    <title>CN ALARM CLOCK</title>
+
+    <link rel = "icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Out_of_date_clock_icon.svg/256px-Out_of_date_clock_icon.svg.png?20080407014653" />
+
+    <!-- Stylesheet-->
+
+    <link rel = "stylesheet" href = "alarm.css" />
+
+</head>
+<body>
+    <div class= "pro-title">
+      <h1>Wake up! I'm an alarm</h1>
+    </div>
+
+    <div class="container d-flex">
+      <div class="clock-container d-flex">
+        <p style="color: rgb(239, 240, 244); font-size:20px; font-weight: 100" id="para"></p> 
+        <div style="margin-bottom: 2rem;" class="current" id= "current">_ : _ : _ </div>
+        <form class="form d-flex mb">
+          <div>
+          <select name="hours" id="hours" required>
+            <!-- <option value="" id="selected-hrs"></option> -->
+          </select>
+
+          <select required name="minutes" id="minutes">
+            <!-- <option value="" id="selected-mins"></option> -->
+          </select>
+
+          <select required name="seconds" id="seconds">
+            <!-- <option value="" id="selected-secs"></option> -->
+          </select>
+          <select required name="am-pm" id="am-pm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+          </div>
+          <button class="btn1 submit-button" id="submit-btn" type="submit">Set Alarm</button>
+        </form>
+        <div class="set-al" >
+          <img class="main-img" src="./large-alarm-clock-numbers-black-many-colors-different-sizes-gray-red-blue-background-horizontal-format-186954544.jpeg" alt="">
+          <img class="main-img" src="./clock.jpeg" alt="">
+          <img class="main-img" src="./clock1.jpeg" alt="">
+          <img class="main-img" src="./clock2.jpeg" alt="">
+          <h1 class="alarm-container-title mb" >Your All Alarms</h1>
+          <!-- <span ><h1 class="alarm-container-title mb" style="display:inline-block">Your All Alarms</h1><img  style="height: 40px; width: 40px; border-radius: 10px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7ufyWj39yjNNFwoWdBlkqTCtm_uG_kupty0mAgIME5MB_fQIZOSsRJBx6owLxMRb5RVWpLGqEBg&usqp=CAU&ec=48665701" alt=""></span> -->
+          <div class="alarms-container" id= "alarms-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- //js file -->
+    <script>
+      var date = new Date();
+      document.getElementById("para").innerHTML = `${date.getDate()} ${date.toLocaleString('default', { month: 'long' })} ${date.getUTCFullYear()}`
+      
+
+      //to prefill current hr time
+      // document.getElementById("selected-hrs").innerHTML = `${date.getHours()}`
+      //to prefill current min time
+      // document.getElementById("selected-mins").innerHTML = `${date.getMinutes()}`
+      //to prefill current sec time
+      // document.getElementById("selected-secs").innerHTML = `${date.getSeconds()}`
+    </script>
+    <script src="./alarm.js"></script>
+  </body>
+</html>
+</html>
